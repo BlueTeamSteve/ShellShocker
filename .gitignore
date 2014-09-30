@@ -13,3 +13,8 @@ hs_err_pid*
 
 #Windows 
 desktop.ini
+
+#Eclipse
+.classpath
+.project
+bin/
